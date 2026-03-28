@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You 💖</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #ffe6f0;
+      margin-top: 100px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      background-color: #ff66a3;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    #content {
+      display: none;
+      margin-top: 30px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    img {
+      width: 200px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hey ❤️</h1>
+  <button onclick="showLove()">See more</button>
+
+  <div id="content">
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Hello_Kitty_character_portrait.png" alt="Hello Kitty">
+    <h2>Sorry 😔</h2>
+    <p>I love you 💖<br>Let's start a new chapter ✨</p>
+  </div>
+
+  <script>
+    function showLove() {
+      document.getElementById("content").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
